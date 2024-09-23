@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qaya, kağız, qayçı oyunu</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h1>Gəlin Qaya, Kağız, Qayçı oyunu oynayaq!</h1>
+    <main>
+      <details class="rules-container">
+        <summary>Oyun qaydaları</summary>
+
+        <p>Siz kompüterə qarşı oynayacaqsınız.</p>
+        <p>Siz Qaya, Kağız və Qayçı arasında seçim edə bilərsiniz.</p>
+        <p>Birdən üç xala ilk gələn qalib gəlir.</p>
+
+        <p>Oyunda xal qazanmağın qaydaları bunlardır:</p>
+        <ul>
+          <li>Qaya Qayçını döyür</li>
+          <li>Qayçı Kağızı döyür</li>
+          <li>Kağız Qayanı döyür</li>
+        </ul>
+        <p>
+            Oyunçu və kompüter eyni seçimi seçərsə (Məs. Kağız və
+            Kağız), onda heç kim qazanmır.
+        </p>
+      </details>
+
+      <div class="score-container">
+        <strong
+          >Oyunçu Hesabı: <span class="score" id="player-score">0</span></strong
+        >
+        <strong
+          >Kompüter Hesabı:
+          <span class="score" id="computer-score">0</span></strong
+        >
+      </div>
+
+      <section class="options-container">
+        <h2>Seçim seçin:</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">Qaya</button>
+          <button id="paper-btn" class="btn">Kağız</button>
+          <button id="scissors-btn" class="btn">Qayçı</button>
+        </div>
+      </section>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">Yenidən oynamaq?</button>
+      </div>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
